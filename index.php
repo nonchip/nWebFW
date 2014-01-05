@@ -2,9 +2,9 @@
 
 // bootstrap config start
 
-global $APP_PATH=__DIR__;
-global $SYS_PATH=__DIR__.'/nwebfw';
+define('_APP_PATH',     __DIR__.'/app'      );
+define('_SYS_PATH',     __DIR__.'/nwebfw'   );
 
 // bootstrap config end
 
-include($SYS_PATH.'/main.php');
+include(_SYS_PATH.'/main.php');

@@ -21,6 +21,10 @@ if(file_exists(_APP_PATH.'/template.php'))
 
 
 
+define('_WEB_PATH',h_get_web_path());
+
+
+
 $router=false;
 
 if(file_exists(_APP_PATH.'/router.php')){

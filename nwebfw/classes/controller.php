@@ -8,6 +8,7 @@ class Controller{
             if(class_exists($name))
                 return new $name();
         }
+        return NULL;
     }
 
     public function template($name){

@@ -4,7 +4,7 @@ namespace n\c;
 
 class Router implements \n\i\Router{
     var $rewrite_rules=array();
-
+    var $url,$parts,$cname,$mname,$class;
     public function rewrite($url){
         foreach($this->rewrite_rules as $k=>$v){
             $url=preg_replace($k,$v,$url);

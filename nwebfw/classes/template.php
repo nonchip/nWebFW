@@ -27,5 +27,6 @@ class Template implements \n\i\Template{
             include(_APP_PATH.'/templates/'.$this->file.'.php');
             return ob_get_clean();
         }
+        return NULL;
     }
 }

@@ -16,7 +16,3 @@ function h_request_path()
     }
     return $path;
 }
-
-function h_get_web_path(){
-    return $_SERVER['REQUEST_URI'];
-}

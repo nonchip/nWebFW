@@ -6,6 +6,7 @@ $prof_start_time=microtime(true);
 define('_DEBUG',        true                );
 define('_APP_PATH',     __DIR__.'/app'      );
 define('_SYS_PATH',     __DIR__.'/nwebfw'   );
+define('_WEB_PATH',     '/'                 );
 
 // bootstrap config end
 

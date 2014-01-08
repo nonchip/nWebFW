@@ -5,9 +5,6 @@ include_once(__DIR__.'/helpers.php');
 if(file_exists(_APP_PATH.'/helpers.php'))
     include_once(_APP_PATH.'/helpers.php');
 
-define('_WEB_PATH',h_get_web_path());
-
-
 include_once(__DIR__.'/interfaces/router.php');
 include_once(__DIR__.'/interfaces/module.php');
 include_once(__DIR__.'/interfaces/template.php');

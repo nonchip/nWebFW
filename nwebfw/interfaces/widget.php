@@ -1,6 +1,7 @@
 <?php
 namespace n\i;
 
-interface Module{
+interface Widget
+{
     public function render();
 }

@@ -16,7 +16,7 @@ class Template implements \n\i\Template{
         if(file_exists(_APP_PATH.'/templates/'.$this->file.'.php')){
             $export=array();
             foreach($this->assigns as $k=>$v){
-                if($v instanceof \n\i\Module){
+                if ($v instanceof \n\i\Widget) {
                     $export[$k]=$v->render();
                 }else{
                     $export[$k]=$v;

@@ -12,7 +12,8 @@ class Router implements \n\i\Router{
         return $url;
     }
 
-    public function route($url){
+    public function route($url=false){
+        if(!$url) $url=h_request_path();
         $this->url=$this->rewrite($url);
         $this->parts=explode('/',$this->url);
         if(count($this->parts)<1 || empty($this->parts[0]))

@@ -37,4 +37,4 @@ if (file_exists(_APP_PATH . '/router.php')) {
 }
 
 // dispatching router
-$router->route(h_request_path());
+$router->route();
